@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>College Info</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="collegestyle.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <script src="collegescript.js"></script>
+</head>
+
+<body>
+  <h1>*****Find College Info Here!*****</h1>
+
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Homepage')">Homepage</button>
+    <button class="tablinks" onclick="openCity(event, 'Map')">Map</button>
+    <button class="tablinks" onclick="openCity(event, 'More Info')">More Info</button>
+    <button class="tablinks" onclick="openCity(event, 'About Us:')">About Us</button>
+  </div>
+
+
+
+  <div id="Homepage" class="tabcontent" style= "display:block">
+    <h3>Homepage</h3>
+    <p><div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="http://www.businesspundit.com/wp-content/uploads/2016/02/Stanford-acceptance-rate.jpg" style="width:100%">
+      <div class="text">Stanford Campus</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="https://www.collegeatlas.org/wp-content/uploads/2017/02/yale-university-campus.jpg" style="width:100%">
+      <div class="text">Yale University</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="https://d3c9g8dnb7x5n7.cloudfront.net/wp-content/uploads/2017/10/31121922/West-Campus-Union-Duke-University-HERO.jpg" style="width:100%">
+      <div class="text">Duke Campus</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</p>
+<p style="font-family:courier">
+  Hello! We are from Girls Who Code (check the About Us page to find out more about us).
+  We made this website to help students who are in the college application process or who just
+  want to know more about a specific college. With our site, you are able to find more info about
+  a college by just clicking on an interactive map containing the top 50 universities in the US.
+  If you want to dive a little deeper, visit the More Info page to view the required GPA to get into
+  a certain college, the required SAT and ACT scores, and the size of the college. Happy searching and we
+  hope you enjoy our website!
+  </div>
+
+
+  <div id="Map" class="tabcontent">
+<!--     <h3>Map TEST</h3>
+    <p>can you see me?</p>
+ -->    <div id="map"></div>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5ZllnosySeqOZ1iQYCnX_tmZVDXlPhIo&callback=initMap">
+      </script>
+  </div>
+
+
+
+  <div id="More Info" class="tabcontent">
+    <h3>More Info</h3>
+    <p>Here you will find more information about a specific college including location, required GPA, required SAT and ACT scores, and size.</p>
+    <p>
+      <h4>Stanford University:<br></h4>
+      acceptance rate: 5%<br>
+      tuition fee: $44,757<br>
+      location: Stanford, CA 94305<br>
+      GPA: 4.18<br>
+      SAT reading and writing: 680-780<br>
+      SAT math: 700-800<br>
+      ACT: 31-35<br>
+      majors: Bioengineering, Chemical Engineering, Chemistry<br>
+      amount of students: 16,914<br>
+      <a href="https://www.stanford.edu">Stanford's website</a><br>
+    </p>
+    <p>
+      <h4>University of California, Los Angeles (UCLA):<br></h4>
+		  acceptance rate: 17.3%<br>
+		  tuition fee: $34,056, OS: $60,738<br>
+		  location: Los Angeles, CA 90095<br>
+		  GPA: 4.29<br>
+		  SAT reading and writing: 570-710<br>
+		  SAT math: 590- 760<br>
+		  ACT: 28-33<br>
+		  majors: Business Administration, Political Science, Psychology<br>
+      amount of students:44,947<br>
+      <a href="http://www.ucla.edu/">UCLA's website</a><br>
+		</p>
+    <p>
+      <h4>University of California, Berkeley (UC Berkeley):<br></h4>
+		  acceptance rate: 16.9%<br>
+		  tuition fee: $45,014, OS: $60,738<br>
+		  location: Berkeley, CA 94720<br>
+		  GPA: 3.85<br>
+		  SAT reading and writing: 620-750<br>
+		  SAT math: 650-790<br>
+		  ACT: 31-34<br>
+		  majors: Engineering, Art, Computer Science, Business Administration<br>
+		  amount of students: 41,910<br>
+      <a href="https://www.berkeley.edu/">UC Berkeley's website</a><br>
+    </p>
+    <p>
+      <h4>University of California, Davis (UC Davis):<br></h4>
+ 		  acceptance rate: 38%<br>
+ 		  tuition fee: $36,499, OS: $64,513<br>
+ 		  location: Davis, CA 95616<br>
+ 		  GPA: 3.99<br>
+ 		  SAT reading and writing: "510-630<br>
+ 		  SAT math: 540-700<br>
+ 		  ACT: 25-31<br>
+ 		  majors: Psychology, Managerial economics, Biological Sciences<br>
+      amount of students: 32,387<br>
+      <a href="https://www.ucdavis.edu/">UC Davis's website</a><br>
+ 		</p>
+    <p>
+      <h4>University of Washington:<br></h4>
+		  acceptance rate: 53.3%<br>
+		  tuition fee: $26,595, OS: $51,159<br>
+		  location: Seattle, WA 98195<br>
+		  GPA: "3.78<br>
+		  SAT reading and writing: 540-660<br>
+		  SAT math: 580-710<br>
+		  ACT: 26-32<br>
+		  majors: Biomedical Sciences, Business Management, Marketing<br>
+      amount of students: 54,223<br>
+      <a href="http://www.washington.edu/">University of Washington's website</a><br>
+		</p>
+    <p>
+      <h4>Pomona College:<br></h4>
+		  acceptance rate: 10.3%<br>
+		  tuition fee: $49,005<br>
+		  location: Claremont, California 91711<br>
+		  GPA: 4.06<br>
+		  SAT reading and writing: 670-770<br>
+		  SAT math: 670-770<br>
+		  ACT: 31-34<br>
+		  majors: Social Sciences, Biological and Biomedical Sciences<br>
+      amount of students: 1,633<br>
+      <a href="https://www.pomona.edu">Pomona's website</a><br>
+    </p>
+    <p>
+      <h4>University of Southern California (USC):<br></h4>
+		  acceptance rate: 17.7%<br>
+		  tuition fee: $44,000<br>
+		  location: Los Angeles, California 90007<br>
+		  GPA: 3.73<br>
+		  SAT reading and writing: 630-730<br>
+		  SAT math: 650-770<br>
+		  ACT: 30-33<br>
+		  majors: "rchitecture, Art & Design, Cinematic Arts<br>
+		  amount of students: 44,000<br>
+    	<a href="https://www.usc.edu">USC's website</a><br>
+    </p>
+    <p>
+      <h4>Santa Clara University:<br></h4>
+		  acceptance rate: 48.8%<br>
+		  tuition fee: $47,112<br>
+		  location: Santa Clara, California 95053<br>
+		  GPA: 3.67<br>
+		  SAT reading and writing": 590-680<br>
+		  SAT math: 610-720<br>
+		  ACT: 28-32<br>
+		  majors: Business Management, Marketing, Social Sciences<br>
+		  amount of students: 9,015<br>
+      <a href="https://www.scu.edu">Santa Clara University's website</a><br>
+    </p>
+    <p>
+      <h4>California Institute of Technology (Cal Tech):<br></h4>
+		  acceptance rate: 8.8%<br>
+		  tuition fee: $50,487<br>
+		  location: Pasadena, California  91125<br>
+		  GPA: 4.26<br>
+		  SAT reading and writing: 740-800<br>
+		  SAT math: 770-800<br>
+	  	ACT: 34-36<br>
+		  majors: Engineering, Computer and Informational Sciences<br>
+      amount of students: 2,238<br>
+      <a href="http://www.caltech.edu">Cal Tech's website</a><br>
+    </p>
+    <p>
+      <h4>Loyola Marymount University (LMU):<br></h4>
+		  acceptancerate : 50.8%<br>
+		  tuition fee: $46,136<br>
+		  location: Los Angeles, California 90045<br>
+		  GPA": 3.74<br>
+		  SAT reading and writing: 550-660<br>
+		  SAT math: 570-670<br>
+		  ACT: 26-30<br>
+		  majors: "Business Management, Marketing, Social Sciences Communication<br>
+		  amount of students: 1,633<br>
+      <a href="https://www.pomona.edu">LMU's website</a><br>
+    </p>
+    <p>
+      <h4>Claremont McKenna College:<br></h4>
+		  acceptance rate: 11%<br>
+		  tuition fee": $52,825<br>
+		  location: Claremont, California 91711<br>
+		  GPA": 4.06<br>
+		  SAT reading and writing: 670-770<br>
+		  SAT math: 670-770<br>
+		  ACT: 31-34<br>
+		  majors: International Relations and Affairs, Psychology, General Ed<br>
+		  amount of students: 9,295<br>
+      <a href="https://www.cmc.edu">Claremont McKenna's website</a><br>
+    </p>
+    <p>
+      <h4>Harvey Mud College:<br></h4>
+		  acceptance rate: 13%<br>
+		  tuition fee: $54,886<br>
+		  location: Claremont, California 91711<br>
+		  GPA: 4.11<br>
+		  SAT reading and writing: 680-780<br>
+		  SAT math: 740-800<br>
+		  ACT: 32-35<br>
+		  majors: Engineering, Multidisciplinary studies, Mathematics<br>
+	    amount of students: 844<br>
+      <a href="https://www.hmc.edu">Harvey Mud's website</a><br>
+		</p>
+    <p>
+      <h4>Pepperdine University:<br></h4>
+		  acceptance rate: 38.1%<br>
+		  tuition fee: $46,692<br>
+		  location: Malibu, California 90263<br>
+		  GPA: 3.59<br>
+		  SAT reading and writing: 550-650<br>
+		  SAT math: 560-680<br>
+		  ACT: 26-31<br>
+		  majors: Communication, Journalism, Social Sciences<br>
+		  amount of students: 7,632<br>
+      <a href="https://www.pepperdine.edu">Pepperdine's website</a><br>
+    </p>
+    <p>
+      <h4>Chapman University:<br></h4>
+		  acceptance rate: 47.6%<br>
+		  tuition fee: $69,469<br>
+		  location: Orange, California 92866<br>
+		  GPA: 3.71<br>
+		  SAT reading and writing: 550-650<br>
+		  SAT math: 560-650<br>
+		  ACT: 31-34<br>
+		  majors: Social Sciences, Biological Sciences, Physical sciences<br>
+		  amount of students: 69,462<br>
+      <a href="https://www.chapman.edu">Chapman's website</a><br>
+    </p>
+    <p>
+      <h4>San Jose State University:<br></h4>
+		  acceptance rate: 55.2%<br>
+		  tuition fee: $26,720<br>
+		  location: San Jose California 95192<br>
+		  GPA": 3.4<br>
+		  SAT reading and writing: 450-560<br>
+		  SAT math": "470-590<br>
+		  ACT: "20-25<br>
+		  majors: Performing Arts, Psychology,Management and Marketing<br>
+		  amount of students: 32,773<br>
+      <a href="http://www.sjsu.edu/">San Jose State's website</a><br>
+    </p>
+    <p>
+      <h4>Cal Poly, San Luis Obispo:<br></h4>
+		  acceptance rate: 31.3%<br>
+		  tuition fee: $27,225<br>
+		  location: San Luis Obispo, California 93407<br>
+		  GPA: 3.92<br>
+		  SAT reading and writing: 560-660<br>
+		  SAT math": 590-700<br>
+		  ACT: 26-31<br>
+		  majors: Agriculture, Biomedical Sciences, Parks and recreation<br>
+		  amount of students: 20,944<br>
+      <a href="https://www.calpoly.edu">Cal Poly's website</a><br>
+    </p>
+    <p>
+      <h4>Golden Gate University:<br></h4>
+		  acceptance rate: N/A<br>
+		  tuition fee: $15,120<br>
+		  location: Claremont, California 91711<br>
+		  GPA: 2.0<br>
+		  SAT reading and writing: N/A<br>
+		  SAT math: N/A<br>
+		  ACT": N/A<br>
+		  majors: Accounting, Business Administration, Management<br>
+		  amount of students: 422<br>
+      <a href="http://www.ggu.edu">Golden Gate's website</a><br>
+    </p>
+    <p>
+      <h4>University of San Francisco (USF):<br></h4>
+		  acceptance rate: 66.4%<br>
+		  tuition fee: $46,250<br>
+		  location: San Francisco, California 94312<br>
+		  GPA: 3.41<br>
+		  SAT reading and writing: 510-620<br>
+		  SAT math: 520-630<br>
+		  ACT": 23-28<br>
+		  majors: Registered Nursing, Marketing Management,Business<br>
+		  amount of students: 11,080<br>
+      <a href="https://www.usfca.edu">USF's website</a><br>
+    </p>
+    <p>
+      <h4>San Francisco State University:<br></h4>
+		  acceptance rate: 67.9%<br>
+		  tuition fee: $26,720<br>
+		  location: San Francisco, California 94312<br>
+		  GPA: 3.23<br>
+		  SAT reading and writing: 430-540<br>
+		  SAT math: 430-550<br>
+		  ACT: 18-24<br>
+		  majors: Accounting Concentration in Business,Biochemistry Apparel Design Merchandising<br>
+		  amount of students: 29,607<br>
+      <a href="http://www.sfsu.edu">San Francisco State's website</a><br>
+    </p>
+    <p>
+      <h4>California State University Long Beach:<br></h4>
+		  acceptance rate: 33.8%<br>
+		  tuition fee: $24,200",
+		  location: Long Beach, California 90840<br>
+		  GPA: 3.75<br>
+		  SAT reading and writing: 460-570<br>
+		  SAT math: 470-590<br>
+	    ACT: 20-26<br>
+		  majors: "Related Support Services, Consumer Sciences, Human Sciences<br>
+		  amount of students: 1,633<br>
+      <a href="https://www.pomona.edu">California State's website</a><br>
+    </p>
+    <p>
+      <h4>California State University Fullerton:<br></h4>
+		  acceptance rate: 41.9%<br>
+		  tuition fee: $40,235<br>
+		  location: Fullerton, California 92831<br>
+		  GPA: 3.48<br>
+		  SAT reading and writing: 450-550<br>
+		  SAT math: 470-570<br>
+		  ACT: 19-24<br>
+		  majors: Communication, Journalism, Marketing<br>
+		  amount of students: 40,235<br>
+      <a href="http://www.fullerton.edu">California State's website</a><br>
+    </p>
+    <p>
+      <h4>California State University East Bay:<br></h4>
+		  acceptance rate: 74%<br>
+		  tuition fee: $29,822<br>
+		  location: Hayward, California 94542<br>
+		  GPA: 3,1<br>
+		  SAT reading and writing: N/A<br>
+		  SAT math": N/A<br>
+		  ACT: N/A<br>
+		  majors: Business Administration and Management, Health Professions<br>
+		  amount of students: 14,823<br>
+      <a href="https://www.csueastbay.edu">California State's website</a><br>
+    </p>
+    <p>
+      <h4>Seattle University:<br></h4>
+		  acceptance rate: 73%<br>
+		  tuition fee: $43,785<br>
+		  location: Seattle, Washington 9812<br>
+		  GPA: 3.4-3.9<br>
+		  SAT reading and writing: 540-640<br>
+		  SAT math: 530-650<br>
+		  ACT: 25-30<br>
+		  majors: Business, Management, Marketing<br>
+		  <a href="https://www.seattleu.edu/">Seattle's website</a><br>
+		  amount of students: 7,405<br>
+    </p>
+    <p>
+      <h4>University of Pomona Polytechnic:<br></h4>
+		  acceptance rate: 39.3%<br>
+		  tuition fee: $29,188<br>
+		  location: Pomona, California 91768<br>
+		  GPA: 3.5<br>
+		  SAT reading and writing: 440-560<br>
+		  SAT math: 460-600<br>
+		  ACT: 20-27<br>
+		  majors: Life sciences, Agriculture & Forestry, Physical Sciences<br>
+		  amount of students: 1,633<br>
+      <a href="https://www.pomona.edu">University of Pomona's website</a><br>
+    </p>
+    <p>
+      <h4>Gonzaga University:<br></h4>
+		  acceptance rate: 73.5<br>
+		  tuition fee: $55,310<br>
+		  location: Spokane, Washington 99202<br>
+		  GPA: 3.72<br>
+		  SAT reading and writing: 550-650<br>
+		  SAT math: 540-650<br>
+		  ACT: 25-30<br>
+		  majors: Social Sciences, psychology,Biomedical Sciences<br>
+		  amount of students: 7,421<br>
+      <a href="https://www.gonzaga.edu">Gonzaga's website</a><br>
+    </p>
+    <p>
+      <h4>Princeton University:<br></h4>
+		  acceptance rate: 7.1%<br>
+		  tuition fee: $66,950<br>
+		  location: Princeton, New Jersey 08544<br>
+		  GPA: 3.87<br>
+		  SAT reading and writing: 690-790<br>
+		  SAT math: 710-800<br>
+		  ACT: 32-35<br>
+		  majors: Public Policy Analysis, Computer Engineering, Econometrics<br>
+		  amount of students: 8,623<br>
+      <a href="https://www.princeton.edu">Princeton's website<br></a>
+    </p>
+    <p>
+      <h4>Harvard University:<br></h4>
+		  acceptance rate: 5.6%<br>
+		  tuition fee: $46,340<br>
+		  location: Cambridge, Massachusetts 02138<br>
+		  GPA: 4.04<br>
+		  SAT reading and writing: 710-800<br>
+		  SAT math: 720-800<br>
+		  ACT: 32-35<br>
+		  majors: Social Sciences, Biology/Biological Sciences, General History<br>
+		  amount of students: 20,324<br>
+      <a href="https://www.harvard.edu">Harvard's website</a><br>
+    </p>
+    <p>
+      <h4>Yale University:<br></h4>
+		  acceptance rate: 6.7%<br>
+		  tuition fee: $49,550<br>
+		  location: New Haven, Connecticut 06520<br>
+		  GPA: 4.19<br>
+		  SAT reading and writing: 710-800<br>
+		  SAT math: 710-800<br>
+		  ACT: 32-35<br>
+		  majors: Economics, Political science, Government, Molecular Biology<br>
+		  <a href="https://www.yale.edu">Yale's website</a><br>
+		  amount of students: 12,385<br>
+    </p>
+    <p>
+      <h4>University of Pennsylvania (UPenn):<br></h4>
+		  acceptance rate: 10.2%<br>
+		  tuition fee: $45,556<br>
+		  location: Philadelphia, Pennsylvania 19104<br>
+		  GPA: 3.9<br>
+		  SAT reading and writing: 680-770<br>
+		  SAT math: 700-800<br>
+		  ACT: 32-35<br>
+		  majors: Finance General, Political Science and Government<br>
+		  <a href="https://www.upenn.edu">UPenn's website</a><br>
+		  amount of students: 24,806<br>
+    </p>
+    <p>
+      <h4>Cornell University:<br></h4>
+		  acceptance rate: 15.1%<br>
+		  tuition fee: $70,371<br>
+		  location: Ithaca, New York 14850<br>
+		  GPA: 4.04<br>
+		  SAT reading and writing: 650-750<br>
+		  SAT math: 680-780<br>
+		  ACT: 31-34<br>
+		  majors: Business management, Agriculture Operations, Related Sciences<br>
+		  amount of students: 21,904<br>
+      <a href="https://www.cornell.edu">Cornell's website</a><br>
+    </p>
+    <p>
+      <h4>New York University (NYU):<br></h4>
+		  acceptance rate: 32.1%<br>
+		  tuition fee: $50,464<br>
+		  location: New York City, New York 10003<br>
+		  GPA: 3.7<br>
+		  SAT reading and writing: 620-720<br>
+		  SAT math: 630-760<br>
+		  ACT: 31-34<br>
+		  majors: Visual and Performing Arts, Social Sciences, Liberal Arts<br>
+		  students: 59,061<br>
+      <a href="https://www.nyu.edu">NYU's website</a><br>
+    </p>
+    <p>
+      <h4>Boston University (BU):<br></h4>
+      acceptance rate: 32,551%<br>
+      tuition fee: $53,948<br>
+      location: Boston, Massachusets 02215<br>
+      GPA: 3.62<br>
+      SAT reading and writing: 590-680<br>
+      SAT math: 630-740<br>
+      ACT: 31-34<br>
+      majors: Business, Management, Marketing, and Related Support Services, Social Sciences, Engineering<br>
+      <a href="http://www.bu.edu">BU's website</a><br>
+      amount of students: 32,551<br>
+    </p>
+    <p>
+      <h4>Tufts University:<br></h4>
+      acceptance_rate: 16.1%<br>
+      tuition fee: $56,247<br>
+      location: Middlesex County, Massachusetts 02155<br>
+      GPA: N/A<br>
+      SAT reading and writing : 680-750<br>
+      SAT math:  690-770<br>
+      ACT: 31-34<br>
+      majors:  Social Sciences, Biological Engineering<br>
+      amount of students: 10,872<br>
+      <a href="https://www.tufts.edu">Tufts's website</a><br>
+    </p>
+    <p>
+      <h4>University of Michigan:<br><h4>
+      acceptance rate: 26.3<br>
+      tuition fee: $29,526<br>
+      location: Dearborn, Michigan 48128<br>
+      GPA: 3.82<br>
+      SAT reading and writing: 640-730<br>
+      SAT math: 670-770<br>
+      ACT: 29-33<br>
+      majors: Business Administration and Management Experimental Psychology<br>
+      amount of students: 44,718<br>
+      <a href="https://www.umich.edu">University of Michigan's website</a><br>
+    </p>
+    <p>
+      <h4>Barnard College:<br></h4>
+      acceptance rate:  19.6%<br>
+      tuition fee: $68,512<br>
+      location: New York City, New York 10027<br>
+      GPA: 3.90<br>
+      SAT reading and writing:  640-740<br>
+      SAT math:  630-730<br>
+      ACT: 31-34<br>
+      majors: English Language, Performing Arts, Social Sciences<br>
+      <a href="https://barnard.edu">Barnard's website</a><br>
+      amount of students: 2,573<br>
+    </p>
+    <p>
+      <h4>Wesleyan University:<br></h4>
+      acceptance rate: 22.2%<br>
+      tuition fee: $ $52,474<br>
+      location: Middletown, Connecticut 06459<br>
+      GPA: 3.73<br>
+      SAT reading and writing: N/A<br>
+      SAT math: N/A<br>
+      ACT: N/A<br>
+      majors: Psychology, Political Science, Literature<br>
+      amount of students: 3,224<br>
+      <a href="http://www.wesleyan.edu">Wesleyan's website</a><br>
+    </p>
+    <p>
+      <h4>Johns Hopkins University:<br></h4>
+		  acceptance rate: 14.1%<br>
+		  tuition fee: $$71,023<br>
+		  location: Baltimore, Maryland 21218<br>
+		  GPA: 3.74<br>
+		  SAT reading and writing : 690-770<br>
+		  SAT math: 710-80<br>
+		  ACT: 32-34<br>
+		  majors: Public Health, Neuroscience, Molecular Biology<br>
+		  amount of students: 23,917<br>
+      <a href="https://www.jhu.edu">Johns Hopkins's website</a><br>
+    </p>
+    <p>
+      <h4>Duke University:<br></h4>
+		  acceptance rate: 11.4%<br>
+		  tuition fee: $53,744<br>
+		  location:  Durham, North Carolina 27708<br>
+		  GPA: 4.17<br>
+		  SAT reading and writing:  680-770<br>
+		  SAT math:  700-800<br>
+		  ACT: 31-34<br>
+		  majors: Economics, General Public Policy Analysis, Biomedical Engineering<br>
+		  amount of students: 15,192<br>
+      <a href="https://www.duke.edu">Duke's website</a><br>
+    </p>
+    <p>
+      <h4>Vassar College:<br></h4>
+		  acceptance rate: 25.7%<br>
+		  tuition fee: $67,740<br>
+		  location: Duchess County, New York 1260<br>
+		  GPA: 3.8<br>
+		  SAT reading and writing: 670-750<br>
+		  SAT math : 700-800<br>
+		  ACT: 31-34<br>
+		  majors: Social Sciences, Visual and Performing Arts, English Language<br>
+		  amount of students: 15,192<br>
+      <a href="https://www.vassar.edu">Vassar's website</a><br>
+    </p>
+    <p>
+      <h4>Georgetown University:<br></h4>
+		  acceptance rate: 17.2%<br>
+		  tuition fee: $72,214<br>
+		  location Washington, D.C. 20057<br>
+		  GPA: 4.03<br>
+		  SAT reading and writing: 660-760<br>
+		  SAT math:  660-760<br>
+		  ACT: 30-34<br>
+		  majors: Social Sciences, Business Management, Marketing and Related<br>
+		  amount of students: 4,523<br>
+      <a href="https://www.georgetown.edu">Georgetown's website</a><br>
+    </p>
+    <p>
+      <h4>Wellesley College:<br></h4>
+		  acceptance rate: 29.9%<br>
+		  tuition fee: $51,148<br>
+		  location: Wellesley, Massachusetts 02481<br>
+		  GPA: 3.98<br>
+		  SAT reading and writing: 650-750<br>
+		  SAT math: 650-750<br>
+		  ACT: 31-34<br>
+		  majors: Foreign Languages, Literatures Linguistics, Ethics<br>
+		  amount of students: 2,474<br>
+      <a href="http://www.wellesley.edu">Wellesley's website</a><br>
+    </p>
+    <p>
+      <h4>Brown University:<br></h4>
+		  acceptance rate: 9.5%<br>
+		  tuition fee: $55,556<br>
+		  location: Providence, Rhode Island 02912<br>
+		  GPA: 4.0<br>
+		  SAT reading and writing: 680-775<br>
+		  SAT math: 680-775<br>
+		  ACT: 31-34<br>
+		  majors: Economics, Computer Sciences, Biology/Biological Sciences<br>
+		  number of students: 8,848<br>
+      <a href="https://www.brown.edu">Brown's website</a><br>
+    </p>
+    <p>
+      <h4>Amherst College:<br></h4>
+		  acceptance rate: 14.1%<br>
+		  tuition fee: $71,900<br>
+		  location: Amherst, Massachusetts 01002<br>
+		  GPA: 4.0<br>
+		  SAT reading and writing: 680-780<br>
+		  SAT math: 690-790<br>
+		  ACT: 31-34<br>
+		  majors:  Economics, Mathematics, Psychology<br>
+	    amount of students: 1,790<br>
+      <a href="https://www.amherst.edu">Amherst's website</a><br>
+    </p>
+    <p>
+      <h4>Dartmouth College:<br></h4>
+		  acceptance rate: 11%<br>
+		  tuition fee: $65,523<br>
+		  location: Hanover, New Hampshire 03755<br>
+		  GPA: 4.06<br>
+		  SAT reading and writing: 670-780<br>
+		  SAT math: 680-780<br>
+		  ACT: 30-34<br>
+		  majors: Social Sciences, Biological and Biomedical Sciences<br>
+		  amount of students: 4,310<br>
+      <a href="https://home.dartmouth.edu/">Darmouth's website</a><br>
+    </p>
+    <p>
+      <h4>Williams College:<br></h4>
+		  acceptance rate: 17.6%<br>
+		  tuition fee: $53,550<br>
+		  location: Williamstown, Massachusetts 01267<br>
+		  GPA: 4.04<br>
+		  SAT reading and writing: 670-770<br>
+		  SAT math: 660-770<br>
+		  ACT: 31-34<br>
+		  majors: Economics, Mathematics, Language and Literature<br>
+		  amount of students: 2,076<br>
+      <a href="https://www.williams.edu">Williams's website</a><br>
+    </p>
+    <p>
+      <h4>Columbia University:<br></h4>
+		  acceptance rate: 6.6%<br>
+	  	tuition fee: $74,173<br>
+		  location: Broadway, New York, NY 10027<br>
+		  GPA: 4.16<br>
+		  SAT reading and writing: 700-790<br>
+	    SAT math: 710-800<br>
+		  ACT: 32-35<br>
+		  majors: Social Sciences,Engineering, Biomedical Sciences<br>
+		  amount of students: 32,429<br>
+      <a href="https://www.columbia.edu">Columbia's website</a><br>
+	  </p>
+    <p>
+      <h4>Connecticut College:<br></h4>
+		  acceptance rate: 40%<br>
+	 	  tuition fee: $69,970<br>
+		  location: New London, Connecticut 06320<br>
+		  GPA: 3.82<br>
+		  SAT reading and writing: 33-35<br>
+		  SAT math: 670-720<br>
+		  ACT: 28-30<br>
+		  majors: Economics, International Relations, Political Science<br>
+		  <a href="https://www.conncoll.edu">Conneticut's website</a><br>
+		  amount of students: 1,903<br>
+    </p>
+    <p>
+      <h4>Vanderbilt University:<br></h4>
+		  acceptance rate: 11.%<br>
+		  tuition fee: $67,392<br>
+		  location: Nashville, Tennessee 37235<br>
+		  GPA: 3.76<br>
+		  SAT reading and writing: 700-790<br>
+	  	SAT math:  720-800<br>
+		  ACT: 32-35<br>
+		  majors: "Multi/Interdisciplinary Studies, Social Sciences<br>
+		  amount of students: 12,686<br>
+      <a href="https://vanderbilt.edu">Vanderbilt's website</a><br>
+    </p>
+    <p>
+      <h4>Northwestern University:<br></h4>
+		  acceptance rate: 13%<br>
+		  tuition fee: $72,980<br>
+		  location: Evanston, Illinois 60208<br>
+		  GPA: 4.11<br>
+		  SAT reading and writing: 690-760<br>
+	  	SAT math: 710-800<br>
+		  ACT: 31-34<br>
+		  majors: Communications, Journalism, Marketing  Communications<br>
+		  amount students: 21,000<br>
+      <a href="https://www.northwestern.edu">Northwestern's website</a><br>
+    </p>
+    <p>
+      <h4>Northeastern University:<br></h4>
+		  acceptance rate: 28%<br>
+		  tuition fee: $51,412<br>
+		  location: Boston, Massachusetts 02115<br>
+		  GPA: 4.0<br>
+		  SAT reading and writing: 640-740<br>
+		  SAT math: 680-760<br>
+		  ACT: 31-33<br>
+		  majors: Applied Physics, Biochemistry, Biology<br>
+	  	amount of students:19,940<br>
+      <a href="https://www.northeastern.edu">Northeastern's website</a><br>
+	  </p>
+  </div>
+
+
+
+  <div id="About Us:" class="tabcontent" style="width:800px; margin:0 auto;">
+    <h3>About Us:</h3>
+    <p>
+     <table style="width:100%">
+       <tr>
+         <th bgcolor="#973527">Jody</th>
+         <th bgcolor="#973527">CHOLL</th>
+         <th bgcolor="#973527">Meliza</th>
+       </tr>
+       <tr>
+         <td bgcolor="#D8B2A7">
+             My name is Jody Chui and I am 16 years old. I am a rising Junior at Burlingame High
+             School. On my free time, I enjoy participating in golf tournaments,
+             hanging out with friends, and playing badminton with my friends/family.
+             I've attended a coding summer camp when I was in eighth grade, but
+             started getting into it my Sophomore year in school. I am eager to
+             learn more about different coding languages and hope to pursue a
+             career in computer science.
+         </td>
+         <td bgcolor="#D8B2A7">
+             My name is Chloe Kim and I am a rising junior at the Head-Royce
+             School in Oakland. My hobbies include drawing, playing the piano,
+             going out with friends, and playing with my corgi. Before Girls Who
+             Code, I was afraid to try and learn to code, because I had the
+             mindset that it was extremely difficult to learn  and understand.
+             This camp has helped me realize that there are so many things you
+             can do with coding and that it is for anyone who is willing to
+             learn it. I hope to continue learning about code!
+         </td>
+         <td bgcolor="#D8B2A7">
+             I am Meliza Gomez, I am 17 years old, and a rising Senior at East
+             Palo Academy since I have already begun working on my college
+             applications I am really passionate about creating this website to
+             be a tool for College applicants. I also  have a great passion for
+             helping people. I joined girls who code with the eagerness of
+             learning a new language that could help me communicate with people
+             in an innovative way. For that same reason I am motivated to fully
+             learn the language in hopes of using it to help people.
+         </td>
+    </p>
+  </div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+</body>
+</html>
